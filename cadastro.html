@@ -1,0 +1,132 @@
+	<!doctype html> 
+	<html lang="pt-br">
+	<head>
+	<meta charset="UTF-8">
+	<title>Cadastro </title>
+	</head>
+
+	<body>
+	<h1> Cadastro Básico</h1>
+	
+	<form 	action="gravarCliente.php"
+		method="POST">
+		
+		
+	Nome do Cliente:
+	    <input 	type="text"
+	    name="nome"
+		size="30"
+		placeholder="Informe o nome do cliente">
+		<br>
+	
+	
+			
+	<legend>Data de Nascimento</legend>
+						<input 	type="date"
+						name="nascimento"
+						value="0"
+						min="0"
+						max="120">
+			
+			<br>
+	
+	<fieldset>
+	<legend>Sexo</legend>
+			<input type="radio" name="sexo" value="M"> Masculino
+			<input type="radio" name="sexo" value="F" checked> Feminino
+			<br>
+			<br>
+			</fieldset>
+			<br>
+			<hr>
+Estado Civil:
+
+	<select id="estadocivil" name="estadocivil">
+		
+	<option value="S" checked> Solteiro</option>
+	<option value="C" > Casado</option>
+	<option value="SE" > Separado</option>
+	<option value="D" > Divorciado</option>
+	<option value="V" > Viúvo</option>
+	
+		</select>
+
+		
+	<br>	
+			<h1> Dados para Contato </h1>
+			
+			
+			<br>
+			E-mail
+			<input 	type="text"
+					name="email"
+					size="50"
+					maxlength="50"
+					placeholder="Digite seu e-mail">			
+				<br> 
+				
+	<input type="radio" name="receberEmail" value="E"> "Deseja receber e-mails"
+	<br> <br>
+	
+	
+	<div>
+	Telefone:
+	<input 	type="text"   name="ddd1" maxlength="2"		size="1"input>
+	<input type="text"   name="tel1" maxlength="9"		size="20"input> 
+ 	Tipo: 	<select id="tipo" name="tipo1"
+	
+	<option value="R" checked> Residencial</option>
+	<option value="E" > Escolha</option>
+	<option value="C" > Celular</option>
+	<option value="CP" > Coorporativo</option>
+	<option value="R" > Recado</option> 
+		</select>	
+	</div>
+		
+	<div>
+	Telefone:
+	<input 	type="text"   name="ddd2" maxlength="2"		size="1"input>
+	<input type="text"   name="tel2" maxlength="9"		size="20"input> 
+	
+	Tipo:
+	<select id="tipo2" name="tipo2"><br>
+	<option value="E" checked > Escolha</option>
+	<option value="R" > Residencial</option>
+	<option value="C" > Celular</option>
+	<option value="CP" > Coorporativo</option>
+	<option value="R" > Recado</option> 
+	</select>
+	</div> 
+	
+	<div>
+	Telefone:
+	<input 	type="text"   name="ddd3" maxlength="2"		size="1"input>
+	<input type="text"   name="tel3" maxlength="9"		size="20"input> 
+	
+	Tipo:
+	<select id="tipo3" name="tipo3"><br>
+	<option value="E" checked > Escolha</option>
+	<option value="R" > Residencial</option>
+	<option value="C" > Celular</option>
+	<option value="CP" > Coorporativo</option>
+	<option value="R" > Recado</option> 
+	</div> 
+	</select>
+		<hr> 
+		
+		
+<h1> Observações </h1>
+	    <input 	type="text"
+	    name="observacoes"
+		size="150"
+		maxlength="100"
+		placeholder="Insira suas observações aqui">
+		<br>
+		
+		
+			
+			<hr>
+	<input type="submit" value="Enviar dados">
+		</form>
+	</body>
+</html>
